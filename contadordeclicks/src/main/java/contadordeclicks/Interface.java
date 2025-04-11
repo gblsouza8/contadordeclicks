@@ -1,6 +1,7 @@
 package contadordeclicks;
 import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 public class Interface extends JFrame {
     private int qtd = 0;
@@ -15,7 +16,7 @@ public class Interface extends JFrame {
         addMouseListener(new MouseClickHandler());
     }
 
-    private class MouseCLickHandler extends MouseAdapter
+    private class MouseClickHandler extends MouseAdapter
     {
         @Override
         public void mouseClicked(MouseEvent event)
